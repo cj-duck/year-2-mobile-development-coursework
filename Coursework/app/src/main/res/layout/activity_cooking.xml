@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.napier.coursework10.CookingActivity">
+
+    <Spinner
+        android:id="@+id/dropDownCooking"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cookingInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cookingInput"
+        app:layout_constraintTop_toTopOf="@+id/cookingInput" />
+
+    <EditText
+        android:id="@+id/cookingInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/cookingList"
+        app:layout_constraintEnd_toStartOf="@+id/dropDownCooking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGoCooking"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:text="Go"
+        app:layout_constraintStart_toStartOf="@+id/dropDownCooking"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/cookingList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cookingInput" />
+
+</android.support.constraint.ConstraintLayout>
